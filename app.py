@@ -6,7 +6,7 @@ from routes.handleWaitlist import waitlist_bp
 from database import create_app
 
 app = create_app()
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": "https://www.ghostlink.app"}})
 
 # Register the video processing blueprint
 app.register_blueprint(video_bp, url_prefix='/api')
