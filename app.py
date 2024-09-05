@@ -18,4 +18,4 @@ def hello_world():
     return jsonify({'message': 'helloworld'})  # Return "helloworld" as JSON
 
 if __name__ == '__main__':
-    app.run(port=4000)
+    app.run(host='0.0.0.0', port=4000)
